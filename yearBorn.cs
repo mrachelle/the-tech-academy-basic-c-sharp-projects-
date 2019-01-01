@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -15,9 +15,12 @@ namespace YearBorn
 
             try
             {
-                if (age <= 0) Console.WriteLine("Please pick a positive number greater than 0");
+                if (age <= 0)
+                    {
+                    Console.WriteLine("Please choose a number greater than 0");
+                    }
             }
-            catch (FormatException ex)
+            catch (Exception ex)
             {
                 Console.WriteLine(ex.Message);
             }
